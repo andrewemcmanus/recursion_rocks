@@ -3,9 +3,21 @@
 
 # This function returns the largest number in a given array.
 
-def find_max(l):
+list_input = input('Enter several numbers, separated by commas and spaces: ')
+list_int = [int(s) for s in list_input.split(',')]
+def find_max(list):
     # Write code here
-    pass
+    length = len(list)
+    if length == 1:
+        max = list[0]
+        return max
+    else:
+        max = find_max(list[1:])
+        if max > list[0]:
+            return max
+        else:
+            return list[0]
 
-# print(find_max([1, 4, 45, 6, -50, 10, 2]))
+maximum = find_max(list_int)
+print(f"The maximum value is {maximum}")
 # => 45
