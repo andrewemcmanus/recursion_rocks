@@ -15,7 +15,7 @@ def reverse(ss):
         return string
         # print(ss[:-2])
 newstring = input('Enter a string: ')
-print(reverse(newstring)
+print(reverse(newstring))
 
 # print(reverse(""))
 # => ""
