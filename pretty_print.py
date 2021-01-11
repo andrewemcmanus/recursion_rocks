@@ -11,10 +11,24 @@
 
 def pretty_print(dictionary):
     # Write code here
-    string = str(dictionary)
-    splitstring = string.split(',')
-    for i in range(len(splitstring)):
-        print(splitstring[i])
+    for keys in dictionary:
+        instance = dictionary[keys]
+        if isinstance(instance, dict):
+            output = pretty_print(instance)
+            print(output)
+        else:
+            print('false')
+
+    return output
+    # return newdict
+            # return dictionary[keys]
+    # return newdict
+
+
+    # string = str(dictionary)
+    # brackets = string.split(',')
+    # for i in range(len(splitstring)):
+    #     print(splitstring[i])
 
 
 o1 = {"a": 1, "b": 2}

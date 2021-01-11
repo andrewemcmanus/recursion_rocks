@@ -5,7 +5,7 @@
 - 🚨 All functions must use recursion 🚨
 
 # Problems
-- [ ] Solve each problem and test code by running `<filename>.py`
-- [ ] Make a commit after completing each problem
+- [X] Solve each problem and test code by running `<filename>.py`
+- [X] Make a commit after completing each problem
 
 ### Happy Coding!
